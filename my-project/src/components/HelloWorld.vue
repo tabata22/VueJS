@@ -41,14 +41,6 @@ export default {
     .catch(e => {
       this.errors.push(e)
     })
-  },
-
-  methods: {
-    sendData() {
-      axios({ method: "POST", "url": "https://httpbin.org/post", "data": this.input, "headers": { "content-type": "application/json" } }).then(error => { 
-        console.error(error);
-      });
-    }
   }
 }
 </script>
